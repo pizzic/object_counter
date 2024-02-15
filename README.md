@@ -6,8 +6,9 @@ This is the implementation of a webservice that implements a REST endpoint that 
 * fastapi
 * opencv
 * numpy
+* uvicorn
 
-`pip install fastapi opencv numpy`
+`pip install fastapi opencv numpy uvicorn`
 
 Download the pre-trained YOLO v3 weight file from [here](https://pjreddie.com/media/files/yolov3.weights) and place in the current directory.
 
