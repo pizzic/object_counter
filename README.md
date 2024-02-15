@@ -12,7 +12,6 @@ This is the implementation of a webservice that implements a REST endpoint that 
 Download the pre-trained YOLO v3 weight file from [here](https://pjreddie.com/media/files/yolov3.weights) and place in the current directory.
 
 
-
 ## Starting the webservice
 
 To start the webservice, run: `uvicorn main:app --reload`
@@ -20,7 +19,7 @@ To start the webservice, run: `uvicorn main:app --reload`
 The service will be ready to receive requests on its endpoints.
 
 
-##Accessing the endpoint
+## Accessing the endpoint
 
 There are three different endpoints which count different object classes: count_people, count_motorcycles, and count_dogs.
 
@@ -43,16 +42,14 @@ For example:
 The result will be returned as a JSON object.
 
 
-##Running the unit tests
+## Running the unit tests
 
 Unit tests are contained in the `tests` directory.
 
 To run: `python3 -m unittest tests/test_image_processor.py`
 
-Tests should run successfully.
 
-
-##Acknowledgements
+## Acknowledgements
 
 Code for running the OpenCV YOLO model is based on code in:
 https://github.com/arunponnusamy/object-detection-opencv
