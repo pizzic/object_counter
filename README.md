@@ -15,11 +15,11 @@ Download the pre-trained YOLO v3 weight file from [here](https://pjreddie.com/me
 
 ## Starting the webservice
 
-`uvicorn main:app --reload`
+To start the webservice, run: `uvicorn main:app --reload`
 
 ##Accessing the endpoint
 
-There are three different endpoints which count different object classes: count_people, count_motorcycles, and count_dogs
+There are three different endpoints which count different object classes: count_people, count_motorcycles, and count_dogs.
 
 `curl -F file=@<image_file_path> localhost:8000/count_people`
 
