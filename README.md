@@ -22,14 +22,19 @@ Download the pre-trained YOLO v3 weight file from [here](https://pjreddie.com/me
 There are three different endpoints which count different object classes: count_people, count_motorcycles, and count_dogs
 
 `curl -F file=@<image_file_path> localhost:8000/count_people`
+
 `curl -F file=@<image_file_path> localhost:8000/count_motorcycles`
+
 `curl -F file=@<image_file_path> localhost:8000/count_dogs`
 
 Sample image files are in the `images` directory.
 
 For example:
+
 `curl -F file=@images/dog.jpg localhost:8000/count_dogs`
+
 `curl -F file=@images/motorcycles.jpg localhost:8000/count_motorcycles`
+
 `curl -F file=@images/people.jpg localhost:8000/count_people`
 
 ##Running the unit tests
