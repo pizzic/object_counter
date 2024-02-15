@@ -17,6 +17,8 @@ Download the pre-trained YOLO v3 weight file from [here](https://pjreddie.com/me
 
 To start the webservice, run: `uvicorn main:app --reload`
 
+The service will be ready to receive requests on its endpoints.
+
 ##Accessing the endpoint
 
 There are three different endpoints which count different object classes: count_people, count_motorcycles, and count_dogs.
@@ -37,11 +39,15 @@ For example:
 
 `curl -F file=@images/people.jpg localhost:8000/count_people`
 
+The result will be returned as a JSON object.
+
 ##Running the unit tests
 
 Unit tests are contained in the `tests` directory.
 
-`python3 -m unittest tests/test_image_processor.py`
+To run: `python3 -m unittest tests/test_image_processor.py`
+
+Tests should run successfully.
 
 ##Acknowledgements
 
